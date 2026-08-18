@@ -261,7 +261,7 @@ enterBtn.addEventListener('click',()=>{
 });
 
 slider.addEventListener('pointerdown',(event)=>{
-  if (event.target.closest('button, a, .reveal-item, .envelope')) return;
+  if (event.target.closest('button, a, .reveal-item, .envelope, .track')) return;
   isDragging=true;
   slider.classList.add('dragging');
   dragStartX=event.clientX;
@@ -281,8 +281,8 @@ const endDrag=()=>{
   isDragging = false;
   slider.classList.remove('dragging');
   track.style.transition='transform .8s cubic-bezier(.22,1,.36,1)';
-  if (dragDeltaX < -70 && currentSlide < slideSections.length - 1) currentSlide += 1;
-  if (dragDeltaX > 70 && currentSlide > 0) currentSlide -= 1;
+  if (dragDeltaX < -100 && currentSlide < slideSections.length - 1) currentSlide += 1;
+  if (dragDeltaX > 100 && currentSlide > 0) currentSlide -= 1;
   updateSlides();
   dragDeltaX = 0;
 };
