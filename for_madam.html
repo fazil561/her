@@ -218,7 +218,9 @@ for(let i=0;i<115;i++){const s=document.createElement('i');s.className='star';s.
 const slideSections=[...document.querySelectorAll('.page-slide')];
 let currentSlide=0;
 let dragStartX=0;
+let dragStartY=0;
 let dragDeltaX=0;
+let dragDeltaY=0;
 let isDragging=false;
 const updateSlides=(dragOffset=0)=>{
   const offset = dragOffset + (currentSlide * -100);
@@ -261,17 +263,20 @@ enterBtn.addEventListener('click',()=>{
 });
 
 slider.addEventListener('pointerdown',(event)=>{
-  if (event.target.closest('button, a, .reveal-item, .envelope, .track')) return;
+  if (event.target.closest('button, a, .reveal-item, .envelope')) return;
   isDragging=true;
   slider.classList.add('dragging');
   dragStartX=event.clientX;
+  dragStartY=event.clientY;
   dragDeltaX=0;
+  dragDeltaY=0;
   track.style.transition='none';
 });
 
 slider.addEventListener('pointermove',(event)=>{
   if (!isDragging) return;
   dragDeltaX = event.clientX - dragStartX;
+  dragDeltaY = event.clientY - dragStartY;
   const offset = (currentSlide * -100) + (dragDeltaX / window.innerWidth) * 100;
   updateSlides(offset);
 });
@@ -281,10 +286,15 @@ const endDrag=()=>{
   isDragging = false;
   slider.classList.remove('dragging');
   track.style.transition='transform .8s cubic-bezier(.22,1,.36,1)';
-  if (dragDeltaX < -100 && currentSlide < slideSections.length - 1) currentSlide += 1;
-  if (dragDeltaX > 100 && currentSlide > 0) currentSlide -= 1;
+  const absX = Math.abs(dragDeltaX);
+  const absY = Math.abs(dragDeltaY);
+  if (absX > absY && absX > 70) {
+    if (dragDeltaX < -70 && currentSlide < slideSections.length - 1) currentSlide += 1;
+    if (dragDeltaX > 70 && currentSlide > 0) currentSlide -= 1;
+  }
   updateSlides();
   dragDeltaX = 0;
+  dragDeltaY = 0;
 };
 
 slider.addEventListener('pointerup', endDrag);
