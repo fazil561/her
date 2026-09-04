@@ -5,471 +5,2613 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#090b22">
 <title>For my Moon — a tiny universe</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="stars"></div>
 
-<section id="landing">
-  <div class="cloud"></div><div class="cloud two"></div>
-  <div>
-    <div class="moon"></div>
-    <div class="eyebrow">a tiny universe, handcrafted</div>
-    <h1 class="hero-title">For my Moon</h1>
-    <p class="hero-sub">For the girl who almost blocked me.👑😭<br><span class="serif">...and accidentally became one of my favourite people.</span></p>
-    <div class="landing-actions">
-      <button class="btn" id="enterBtn" type="button">Enter →</button>
-      <button class="btn btn-soft" id="dontCareBtn" type="button">Don't care</button>
-    </div>
-  </div>
-</section>
+<style>
+/* =========================================================
+   FOR MY MOON — ONE FILE VERSION
+   HTML + CSS + JS
+   ========================================================= */
 
-<section id="moon" class="moon-stage dark">
-  <div class="wrap">
-    <div class="eyebrow">chapter one</div>
-    <h2>The Moon</h2>
-    <p class="lead" style="margin:auto">Some things are easier to understand when you stop trying to name them.</p>
-    <div id="interactiveMoon" class="interactive-moon" aria-label="Click the moon to reveal a poem"></div>
-    <div id="poem" class="poem">
-      <span>I once tried to describe the moon.</span>
-      <span>Then I met you</span>
-      <span>and realised I had been looking</span>
-      <span>in the wrong direction.</span>
-    </div>
-    <p class="hand" style="font-size:1.5rem;color:#9994b4">tap the moon</p>
-  </div>
-</section>
-
-<section class="dark">
-  <div class="wrap">
-    <div class="eyebrow">a small request</div>
-    <h2>Things I Hope<br>You Never Lose</h2>
-    <p class="lead">Growing up is not supposed to mean sanding every strange, wonderful edge off yourself.</p>
-    <div class="cards">
-      <div class="card reveal-item"><p>Your goofy eyes👀(my lord damnn💖)</p><span class="reveal-note">exactly the kind of magic i never want to lose ✨</span></div>
-      <div class="card reveal-item"><p>Your ridiculous little laughs😄💖</p><span class="reveal-note">the sound of joy should stay forever 💞</span></div>
-      <div class="card reveal-item"><p>The childish side of you👶(my favorite❤️)</p><span class="reveal-note">that innocence is part of your charm, not a flaw 🌙</span></div>
-      <div class="card reveal-item"><p>The way you get excited over tiny things🥳💗</p><span class="reveal-note">tiny joys are often the sweetest kind 🌼</span></div>
-      <div class="card reveal-item"><p>The person you are when nobody is watching👑</p><span class="reveal-note">that version of you is beautiful and real 🌟</span></div>
-    </div>
-    <div class="final-note">Growing up doesn't mean you have to leave these things behind.</div>
-  </div>
-</section>
-
-<section class="story">
-  <div class="wrap">
-    <div class="eyebrow">classified records</div>
-    <h2>Madam Lore™👑</h2>
-    <p class="lead">A completely objective historical archive. Absolutely no exaggeration whatsoever</p>
-    <div class="timeline">
-      <article class="chapter"><div class="chapter-box reveal-item">
-        <h3>CHAPTER 01 — THE TEXT THAT CHANGED EVERYTHING</h3>
-        <p>13TH MAY 2026</p><p></p><p>"Sooo you're a author ???"</p><p>Creepy but cute</p><p><b>Small text, such beauty entered my life</b></p>
-        <span class="reveal-note">still one of the best little beginnings 💌</span>
-      </div></article>
-      <article class="chapter"><div class="chapter-box reveal-item">
-        <h3>CHAPTER 02 — GUDDU MORNING</h3>
-        <p class="hand" style="font-size:2.3rem">Guddu morninggg 🌞</p>
-        <span class="reveal-note">morning chaos, but somehow very cute 🫶</span>
-      </div></article>
-      <article class="chapter"><div class="chapter-box reveal-item">
-        <h3>CHAPTER 03 — MEH MEH</h3>
-        <p>28th MAY 2026</p><p>“Haleeemuuu🐐”</p><p>HOWW CANN A PERSOONN BE SOO CUTEE!!😭💗</p>
-        <span class="reveal-note">the kind of nonsense that made the whole day better 😭💖</span>
-      </div></article>
-      <article class="chapter"><div class="chapter-box reveal-item">
-        <h3>CHAPTER 04 — THE 150 BLOCKED PEOPLE</h3>
-        <p>You were <b>THIS</b> close.</p>
-        <div class="progress"><i></i></div>
-        <p class="hand" style="font-size:1.6rem">My survival probability: 99.3%</p>
-        <span class="reveal-note">lucky me, the universe kept the right one 💫</span>
-      </div></article>
-    </div>
-  </div>
-</section>
-
-<section class="dark">
-  <div class="wrap">
-    <div class="eyebrow">unsent drafts</div>
-    <h2>Things I Never Said</h2>
-    <p class="lead">No grand speech. No hidden expectation. Just a few truths folded into envelopes.</p>
-    <div class="envelopes">
-      <div class="envelope"><div class="env-inner"><div class="face front"><div><div class="seal">✦</div>Envelope 01<br><small>tap to open</small></div></div><div class="face back">I like how you can be incredibly mature and incredibly goofy five minutes later.</div></div></div>
-      <div class="envelope"><div class="env-inner"><div class="face front"><div><div class="seal">☾</div>Envelope 02<br><small>tap to open</small></div></div><div class="face back">Your smile is unfair.</div></div></div>
-      <div class="envelope"><div class="env-inner"><div class="face front"><div><div class="seal">✿</div>Envelope 03<br><small>tap to open</small></div></div><div class="face back">You don't have to become less childish to become more grown up.</div></div></div>
-      <div class="envelope"><div class="env-inner"><div class="face front"><div><div class="seal">♡</div>Envelope 04<br><small>tap to open</small></div></div><div class="face back">Thank you for existing.</div></div></div>
-      <div class="envelope locked"><div class="env-inner"><div class="face front"><div><div class="seal">🔒</div><b>Open only when you want to.</b><br><small>there is no right answer</small></div></div><div class="face back">Whatever you feel about me, I hope you always feel free to tell me.</div></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="music">
-  <div class="wrap">
-    <div class="eyebrow">side b</div>
-    <h2>Music Room</h2>
-    <p class="lead">A little record shop for moods that don't fit neatly into words. No autoplay. Just press play when you want to.</p>
-    <p class="hand" style="font-size:1.5rem;color:#aaa5c0; margin-bottom:18px;">increase the volume ✨</p>
-    <div class="player">
-      <div class="record"></div>
-      <div class="music-grid">
-        <div class="track reveal-item" data-track="moonlight">
-          <div class="track-head">
-            <div class="track-label"><small>01</small><b>Moonlight</b></div>
-          </div>
-          <div class="track-visualizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <em>for your soft moments</em>
-        </div>
-        <div class="track reveal-item" data-track="goofy">
-          <div class="track-head">
-            <div class="track-label"><small>02</small><b>Goofy Madam</b></div>
-          </div>
-          <div class="track-visualizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <em>the loud little laugh track</em>
-        </div>
-        <div class="track reveal-item" data-track="heartattack">
-          <div class="track-head">
-            <div class="track-label"><small>03</small><b>Heart Attack</b></div>
-          </div>
-          <div class="track-visualizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <em>the one that keeps me smiling</em>
-        </div>
-        <div class="track reveal-item" data-track="neet">
-          <div class="track-head">
-            <div class="track-label"><small>04</small><b>Just You</b></div>
-          </div>
-          <div class="track-visualizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <em>soft and sweet, like you</em>
-        </div>
-        <div class="track reveal-item" data-track="twam">
-          <div class="track-head">
-            <div class="track-label"><small>05</small><b>2 AM Thoughts</b></div>
-          </div>
-          <div class="track-visualizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <em>the one that says too much</em>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="gallery">
-  <div class="wrap">
-    <div class="eyebrow">little evidence</div>
-    <h2>A Gallery of<br>Little Things</h2>
-    <p class="lead">Not portraits. Just the tiny pieces of the world that somehow acquire a person's name.</p>
-    <div class="polaroids">
-      <div class="polaroid reveal-item" style="--r:-2deg"><img src="1.jpg" alt="You with that perfect smile"><div class="caption">That hat, that smile.</div><span class="reveal-note">the kind of moment i never want to forget 🎩</span></div>
-      <div class="polaroid reveal-item" style="--r:2deg"><img src="2.jpg" alt="Your playful side"><div class="caption">You being you.</div><span class="reveal-note">effortlessly bright, genuinely joyful 🎀</span></div>
-      <div class="polaroid reveal-item" style="--r:-1deg"><img src="3.jpg" alt="Your thoughtful moments"><div class="caption">The quiet beauties.</div><span class="reveal-note">when you're lost in thought, you're still breathtaking 🌸</span></div>
-      <div class="polaroid reveal-item" style="--r:3deg"><img src="4.jpg" alt="Your silly moments"><div class="caption">Unfiltered chaos.</div><span class="reveal-note">the goofy smiles that make me smile too 💕</span></div>
-      <div class="polaroid reveal-item" style="--r:-3deg"><img src="5.jpg" alt="Your creative hands"><div class="caption">You create magic.</div><span class="reveal-note">your hands know how to make things beautiful 🎨</span></div>
-    </div>
-  </div>
-</section>
-
-<div class="site-pop" id="sitePop" aria-live="polite">
-  <div class="site-pop-box">
-    <div class="eyebrow">little confession</div>
-    <p id="sitePopText">Really? 😢</p>
-    <div class="site-pop-actions">
-      <button class="btn" id="sitePopMain" type="button">I don't care</button>
-    </div>
-  </div>
-</div>
-
-<div class="heart-break-overlay" id="heartBreakOverlay" aria-live="polite">
-  <div class="heart-break-heart">💔</div>
-  <button class="home-reset-btn" id="homeResetBtn" type="button">home</button>
-</div>
-
-<div class="egg-msg" id="eggMsg"><div class="egg-box"><div class="eyebrow">MADAM BUTTON™</div><div class="egg-text" id="eggText">I knew you would.</div><button class="btn" id="eggNext">continue →</button></div></div>
-
-<section class="garden" id="garden">
-  <div class="garden-wrap">
-    <div class="flower"><div class="stem"></div><div class="bloom"><i></i></div></div>
-    <div class="eyebrow">the last page</div>
-    <h2>Whatever happens next,<br>I'm glad our paths crossed.</h2>
-    <div class="hand" style="font-size:2rem;color:#c0b9d5">— Fazil</div>
-    <div class="footer-note">Keep being you.</div>
-    <div class="egg"><button id="eggBtn">Do not press.</button></div>
-    <button id="goHomeBtn" class="go-home-btn">home</button>
-  </div>
-</section>
-
-<script>
-const body=document.body;
-const slides=[...document.querySelectorAll('section')];
-slides.forEach((slide)=>slide.classList.add('page-slide'));
-
-const slider=document.createElement('div');
-slider.className='page-slider';
-const track=document.createElement('div');
-track.className='slides-track';
-slides.forEach((slide)=>track.appendChild(slide));
-slider.appendChild(track);
-body.insertBefore(slider, body.firstChild);
-
-const starWrap=document.getElementById('stars');
-for(let i=0;i<115;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=(Math.random()*4)+'s';s.style.opacity=(.15+Math.random()*.7);starWrap.appendChild(s)}
-
-const slideSections=[...document.querySelectorAll('.page-slide')];
-let currentSlide=0;
-let dragStartX=0;
-let dragStartY=0;
-let dragDeltaX=0;
-let dragDeltaY=0;
-let isDragging=false;
-const updateSlides=(dragOffset=0)=>{
-  const offset = dragOffset + (currentSlide * -100);
-  track.style.transform=`translateX(${offset}vw)`;
-  slideSections.forEach((section,index)=>{
-    section.dataset.active = (index === currentSlide) ? 'true' : 'false';
-    section.dataset.scroll = (index > 1) ? 'true' : 'false';
-  });
-};
-
-slideSections.forEach((section,index)=>{
-  if (index === 0 || index === slideSections.length - 1) return;
-
-  const nav=document.createElement('div');
-  nav.className='page-slide-nav';
-  const prevBtn=document.createElement('button');
-  prevBtn.type='button';
-  prevBtn.className='slide-btn prev';
-  prevBtn.textContent='Prev';
-  prevBtn.disabled=index===1;
-  prevBtn.addEventListener('click',()=>{if(currentSlide>0){currentSlide -= 1; updateSlides();}});
-
-  const nextBtn=document.createElement('button');
-  nextBtn.type='button';
-  nextBtn.className='slide-btn next';
-  nextBtn.textContent=index===slideSections.length-1?'Finish':'Next';
-  nextBtn.addEventListener('click',()=>{if(currentSlide<slideSections.length-1){currentSlide += 1; updateSlides();}});
-
-  nav.appendChild(prevBtn);
-  nav.appendChild(nextBtn);
-  section.appendChild(nav);
-});
-
-const enterBtn=document.getElementById('enterBtn');
-enterBtn.addEventListener('click',()=>{
-  if (currentSlide === 0) {
-    currentSlide = 1;
-    updateSlides();
-  }
-});
-
-slider.addEventListener('pointerdown',(event)=>{
-  if (event.target.closest('button, a, .reveal-item, .envelope')) return;
-  isDragging=true;
-  slider.classList.add('dragging');
-  dragStartX=event.clientX;
-  dragStartY=event.clientY;
-  dragDeltaX=0;
-  dragDeltaY=0;
-  track.style.transition='none';
-});
-
-slider.addEventListener('pointermove',(event)=>{
-  if (!isDragging) return;
-  dragDeltaX = event.clientX - dragStartX;
-  dragDeltaY = event.clientY - dragStartY;
-  const offset = (currentSlide * -100) + (dragDeltaX / window.innerWidth) * 100;
-  updateSlides(offset);
-});
-
-const endDrag=()=>{
-  if (!isDragging) return;
-  isDragging = false;
-  slider.classList.remove('dragging');
-  track.style.transition='transform .8s cubic-bezier(.22,1,.36,1)';
-  const absX = Math.abs(dragDeltaX);
-  const absY = Math.abs(dragDeltaY);
-  if (absX > absY && absX > 70) {
-    if (dragDeltaX < -70 && currentSlide < slideSections.length - 1) currentSlide += 1;
-    if (dragDeltaX > 70 && currentSlide > 0) currentSlide -= 1;
-  }
-  updateSlides();
-  dragDeltaX = 0;
-  dragDeltaY = 0;
-};
-
-slider.addEventListener('pointerup', endDrag);
-slider.addEventListener('pointerleave', endDrag);
-slider.addEventListener('pointercancel', endDrag);
-
-updateSlides();
-
-const moon=document.getElementById('interactiveMoon'),poem=document.getElementById('poem');
-moon.addEventListener('click',()=>poem.classList.add('reveal'));
-
-document.querySelectorAll('.reveal-item').forEach((item)=>{
-  item.addEventListener('click',()=>{
-    const isOpen=item.classList.contains('opened');
-    document.querySelectorAll('.reveal-item').forEach((box)=>box.classList.remove('opened'));
-    if(!isOpen){ item.classList.add('opened'); }
-  });
-});
-
-document.querySelectorAll('.envelope').forEach(e=>e.addEventListener('click',()=>e.classList.toggle('open')));
-
-const trackAudioPaths={
-  moonlight:'moonlight.mp3',
-  goofy:'goofymadam.mp3',
-  heartattack:'heartattack.mp3',
-  neet:'just madam.mp3',
-  twam:'2am.mp3'
-};
-
-const audioState={currentAudio:null, currentTrack:null};
-window.audioState = audioState;
-
-const stopCurrentAudio=()=>{
-  if (audioState.currentAudio) {
-    audioState.currentAudio.pause();
-    audioState.currentAudio.currentTime=0;
-  }
-  audioState.currentAudio=null;
-  audioState.currentTrack=null;
-};
-
-const startTrackAudio=(track)=>{
-  stopCurrentAudio();
-  const trackId=track.dataset.track;
-  const audioPath=trackAudioPaths[trackId];
-  if (!audioPath) return;
-  
-  const audio=new Audio(audioPath);
-  audio.volume=0.7;
-  audio.play().catch(err=>console.log('Play failed:',err));
-  audioState.currentAudio=audio;
-  audioState.currentTrack=track;
-  
-  const visualizer=track.querySelector('.track-visualizer');
-  if (!visualizer) return;
-  const bars=visualizer.querySelectorAll('span');
-  
-  const animateVisualizer=()=>{
-    if (audio.paused || audio.ended) {
-      bars.forEach(bar=>bar.style.transform='');
-      return;
-    }
-    bars.forEach((bar,i)=>{
-      const height=Math.random() * 0.8 + 0.2;
-      bar.style.transform=`scaleY(${height})`;
-      bar.style.opacity=0.4 + Math.random() * 0.6;
-    });
-    requestAnimationFrame(animateVisualizer);
-  };
-  animateVisualizer();
-  
-  audio.onended=()=>{
-    track.classList.remove('playing');
-    const playBtn=track.querySelector('.track-play');
-    if(playBtn) playBtn.textContent='▶';
-    audioState.currentAudio=null;
-  };
-};
-
-document.querySelectorAll('.track').forEach((track)=>{
-  track.addEventListener('click',(event)=>{
-    event.stopPropagation();
-    const isPlaying=track.classList.contains('playing');
-    document.querySelectorAll('.track').forEach((item)=>{
-      item.classList.remove('playing');
-    });
-    if(!isPlaying){
-      track.classList.add('playing');
-      startTrackAudio(track);
-    } else {
-      stopCurrentAudio();
-      track.classList.remove('playing');
-    }
-  });
-});
-
-const dontCareBtn=document.getElementById('dontCareBtn');
-const sitePop=document.getElementById('sitePop');
-const sitePopText=document.getElementById('sitePopText');
-const sitePopMain=document.getElementById('sitePopMain');
-const heartBreakOverlay=document.getElementById('heartBreakOverlay');
-const homeResetBtn=document.getElementById('homeResetBtn');
-const openSitePop=(msg='Really? 😢', btnLabel="I don't care")=>{
-  sitePopText.textContent=msg;
-  sitePopMain.textContent=btnLabel;
-  sitePop.classList.add('show');
-};
-const closeSitePop=()=>sitePop.classList.remove('show');
-
-let dontCareStage = 0;
-
-const triggerHeartBreak = () => {
-  document.body.classList.add('heart-break-mode');
-  heartBreakOverlay.classList.add('show');
-  closeSitePop();
-};
-
-const resetHomePage = () => {
-  document.body.classList.remove('heart-break-mode');
-  heartBreakOverlay.classList.remove('show');
-  dontCareStage = 0;
-  closeSitePop();
-  sitePopText.textContent='Really? 😢';
-  sitePopMain.textContent="I don't care";
-  currentSlide = 0;
-  updateSlides();
-};
-
-dontCareBtn.addEventListener('click',()=>{
-  dontCareStage = 0;
-  openSitePop('Really? 😢', "no!");
-});
-
-sitePopMain.addEventListener('click',()=>{
-  if (dontCareStage === 0) {
-    dontCareStage = 1;
-    openSitePop('You really don\'t care? 😭', "NO!!!");
-    return;
-  }
-
-  triggerHeartBreak();
-});
-
-homeResetBtn.addEventListener('click', resetHomePage);
-sitePop.addEventListener('click',(e)=>{if(e.target===sitePop)closeSitePop();});
-
-document.addEventListener('click',(event)=>{
-  const spark=document.createElement('span');
-  spark.className='spark';
-  spark.style.left=`${event.clientX}px`;
-  spark.style.top=`${event.clientY}px`;
-  document.body.appendChild(spark);
-  setTimeout(()=>spark.remove(), 700);
-});
-
-const eggBtn=document.getElementById('eggBtn'),eggMsg=document.getElementById('eggMsg'),eggText=document.getElementById('eggText'),eggNext=document.getElementById('eggNext');
-const lines=['I knew you would.','Still curious?','You’re impossible.','Okay fine. You’re cute.','I love you. And whether you know what to do with those words yet or not, thats okay. Theyre yours to keep, with no pressure attached.','NOW GO STUDY 😭📚'];
-let n=0;
-eggBtn.onclick=()=>{n=0;eggText.textContent=lines[n];eggMsg.style.display='grid'};
-eggNext.onclick=()=>{n++;if(n<lines.length){eggText.textContent=lines[n]}else{eggMsg.style.display='none'}};
-
-const goHomeBtn=document.getElementById('goHomeBtn');
-if(goHomeBtn){
-  goHomeBtn.onclick=()=>{
-    currentSlide=0;
-    updateSlides();
-    window.scrollTo({top:0,behavior:'smooth'});
-  };
+:root{
+  --night:#070819;
+  --night2:#10102d;
+  --lav:#b9a7ef;
+  --lav2:#6f5aa8;
+  --pink:#d987a7;
+  --rose:#a94f78;
+  --burgundy:#4a1830;
+  --cream:#f7f1e9;
+  --white:#fff8fc;
+  --muted:#aaa5c0;
+  --gold:#e9c878;
 }
 
-const garden=document.getElementById('garden');
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)garden.classList.add('grown')}),{threshold:.35});
-observer.observe(garden);
+*{
+  box-sizing:border-box;
+}
 
-window.addEventListener('scroll',()=>{document.querySelectorAll('.star').forEach((s,i)=>{if(i%4===0)s.style.transform=`translateY(${scrollY*.025}px)`})});
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  overflow-x:hidden;
+  background:var(--night);
+  color:var(--white);
+  font-family:"Segoe UI",Arial,sans-serif;
+}
+
+button{
+  font:inherit;
+}
+
+button:focus-visible{
+  outline:3px solid white;
+  outline-offset:4px;
+}
+
+img{
+  max-width:100%;
+}
+
+.hidden{
+  display:none!important;
+}
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+.wrap{
+  width:min(950px,100%);
+  margin:auto;
+}
+
+.eyebrow{
+  font-size:.75rem;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  opacity:.7;
+  margin-bottom:15px;
+}
+
+h1,
+h2,
+h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+}
+
+h1{
+  font-size:clamp(2.8rem,9vw,6rem);
+  line-height:.95;
+}
+
+h2{
+  font-size:clamp(2.3rem,7vw,4.8rem);
+  line-height:1.05;
+}
+
+h3{
+  line-height:1.2;
+}
+
+p{
+  line-height:1.8;
+}
+
+.lead{
+  max-width:700px;
+  margin:15px auto;
+  color:#d7d2e7;
+  font-size:clamp(1rem,2.8vw,1.2rem);
+}
+
+.hand{
+  font-family:cursive;
+}
+
+.serif{
+  font-family:Georgia,"Times New Roman",serif;
+}
+
+.btn{
+  border:1px solid rgba(255,255,255,.3);
+  background:rgba(255,255,255,.08);
+  color:white;
+  padding:14px 24px;
+  min-height:48px;
+  border-radius:999px;
+  cursor:pointer;
+  transition:.25s ease;
+  backdrop-filter:blur(10px);
+  margin:6px;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.15);
+}
+
+.btn.primary{
+  border-color:transparent;
+  background:linear-gradient(135deg,#c86b91,#8d3c65);
+  box-shadow:0 12px 35px rgba(155,48,100,.3);
+}
+
+/* =========================================================
+   PROPOSAL WORLD
+   ========================================================= */
+
+#proposal{
+  min-height:100svh;
+  background:
+    radial-gradient(circle at 50% 30%,rgba(214,120,157,.22),transparent 35%),
+    radial-gradient(circle at 20% 80%,rgba(145,57,102,.2),transparent 35%),
+    linear-gradient(135deg,#240c1c,#571b3a 45%,#160817);
+}
+
+.proposal-screen{
+  min-height:100svh;
+  display:none;
+  place-items:center;
+  position:relative;
+  padding:30px 18px;
+  overflow:hidden;
+}
+
+.proposal-screen.active{
+  display:grid;
+  animation:fadeIn .8s ease;
+}
+
+.proposal-bg{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 35%,rgba(255,200,225,.1),transparent 30%);
+}
+
+.proposal-content{
+  position:relative;
+  z-index:5;
+  width:min(760px,100%);
+  text-align:center;
+}
+
+.confession{
+  width:min(760px,100%);
+  padding:35px 24px;
+  background:rgba(20,5,15,.3);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:30px;
+  backdrop-filter:blur(8px);
+  text-align:center;
+}
+
+.confession p{
+  font-size:clamp(1rem,2.8vw,1.25rem);
+  max-width:680px;
+  margin:15px auto;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(15px);
+  }
+  to{
+    opacity:1;
+    transform:none;
+  }
+}
+
+/* =========================================================
+   PROPOSAL LILIES
+   ========================================================= */
+
+.lily{
+  position:absolute;
+  width:150px;
+  height:95px;
+  opacity:.5;
+  filter:drop-shadow(0 0 16px rgba(255,210,230,.22));
+  animation:sway 7s ease-in-out infinite;
+  z-index:2;
+}
+
+.lily:before,
+.lily:after,
+.lily i,
+.lily b{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:42%;
+  width:62px;
+  height:100px;
+  border-radius:100% 0 100% 0;
+  transform-origin:bottom center;
+  background:linear-gradient(
+    135deg,
+    rgba(255,247,250,.9),
+    rgba(229,157,190,.3)
+  );
+}
+
+.lily:before{
+  transform:translate(-55%,-50%) rotate(-35deg);
+}
+
+.lily:after{
+  transform:translate(-45%,-50%) rotate(35deg) scaleX(-1);
+}
+
+.lily i{
+  transform:translate(-50%,-50%);
+}
+
+.lily b{
+  transform:translate(-50%,-50%) rotate(72deg);
+}
+
+.lily em{
+  position:absolute;
+  left:50%;
+  top:48%;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--gold);
+  box-shadow:
+    18px 8px var(--gold),
+    -18px 8px var(--gold),
+    9px 19px var(--gold),
+    -9px 19px var(--gold);
+  z-index:3;
+}
+
+.l1{
+  left:-35px;
+  top:5%;
+}
+
+.l2{
+  right:-40px;
+  top:18%;
+  transform:scale(.75);
+  animation-delay:-2s;
+}
+
+.l3{
+  left:-40px;
+  bottom:15%;
+  transform:scale(.65);
+  animation-delay:-4s;
+}
+
+.l4{
+  right:-30px;
+  bottom:3%;
+  transform:scale(.9);
+  animation-delay:-1s;
+}
+
+@keyframes sway{
+  50%{
+    transform:rotate(5deg) translateY(-5px);
+  }
+}
+
+/* =========================================================
+   PETALS
+   ========================================================= */
+
+#petals{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+
+.petal{
+  position:absolute;
+  width:9px;
+  height:16px;
+  border-radius:100% 0 100% 0;
+  background:rgba(255,205,225,.5);
+  animation:fall linear infinite;
+}
+
+@keyframes fall{
+  from{
+    transform:translate3d(0,-12vh,0) rotate(0);
+  }
+  to{
+    transform:translate3d(10vw,110vh,0) rotate(300deg);
+  }
+}
+
+/* =========================================================
+   RING
+   ========================================================= */
+
+.ring-stage{
+  width:180px;
+  height:140px;
+  margin:20px auto;
+  position:relative;
+}
+
+.ring-box{
+  position:absolute;
+  width:125px;
+  height:65px;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  background:linear-gradient(145deg,#681d43,#3d1028);
+  border-radius:10px;
+  box-shadow:0 20px 35px rgba(0,0,0,.35);
+}
+
+.ring-lid{
+  position:absolute;
+  width:132px;
+  height:52px;
+  left:50%;
+  bottom:54px;
+  transform:translateX(-50%);
+  transform-origin:bottom;
+  background:linear-gradient(145deg,#8e315d,#4b1533);
+  border-radius:10px 10px 4px 4px;
+  transition:.9s ease;
+}
+
+.ring-box.open .ring-lid{
+  transform:translateX(-50%) rotateX(-115deg);
+}
+
+.ring{
+  position:absolute;
+  left:50%;
+  bottom:22px;
+  width:55px;
+  height:55px;
+  border:8px solid var(--gold);
+  border-radius:50%;
+  transform:translateX(-50%) scale(.4);
+  opacity:0;
+  transition:1s ease;
+  box-shadow:0 0 25px #f7df91;
+}
+
+.ring-box.open .ring{
+  opacity:1;
+  transform:translateX(-50%) scale(.8);
+}
+
+.ring-box.yes .ring{
+  bottom:80px;
+  transform:translateX(-50%) scale(1.1) rotate(20deg);
+}
+
+/* =========================================================
+   CONFETTI
+   ========================================================= */
+
+.confetti{
+  position:fixed;
+  top:-20px;
+  width:8px;
+  height:14px;
+  z-index:100;
+  pointer-events:none;
+  animation:confettiFall 2.8s linear forwards;
+}
+
+@keyframes confettiFall{
+  to{
+    transform:translate3d(var(--x),110vh,0) rotate(800deg);
+    opacity:.1;
+  }
+}
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.progress-dots{
+  position:fixed;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:7px;
+  z-index:200;
+}
+
+.progress-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:rgba(255,255,255,.25);
+}
+
+.progress-dot.active{
+  background:white;
+  box-shadow:0 0 12px white;
+}
+
+/* =========================================================
+   JOURNAL / MADAM WORLD
+   ========================================================= */
+
+#journal{
+  display:none;
+  min-height:100svh;
+  background:var(--night);
+  color:var(--cream);
+}
+
+#journal.active{
+  display:block;
+  animation:fadeIn .8s ease;
+}
+
+.journal-bg{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 70% 15%,rgba(111,90,168,.25),transparent 30%),
+    radial-gradient(circle at 15% 50%,rgba(185,167,239,.12),transparent 25%),
+    linear-gradient(180deg,#070819,#10102d 55%,#070819);
+  z-index:0;
+}
+
+.journal-main{
+  position:relative;
+  z-index:2;
+}
+
+.j-section{
+  min-height:100svh;
+  padding:90px 20px;
+  display:grid;
+  place-items:center;
+  position:relative;
+}
+
+.j-section .j-wrap{
+  width:min(950px,100%);
+  margin:auto;
+}
+
+/* =========================================================
+   MOON
+   ========================================================= */
+
+.interactive-moon{
+  width:min(210px,55vw);
+  aspect-ratio:1;
+  border-radius:50%;
+  margin:30px auto;
+  background:
+    radial-gradient(circle at 35% 30%,#fff,#ddd6ff 35%,#9e8bd5 70%,#5b478e);
+  box-shadow:
+    0 0 45px rgba(185,167,239,.55),
+    0 0 120px rgba(111,90,168,.25);
+  cursor:pointer;
+  transition:.5s ease;
+}
+
+.interactive-moon:hover{
+  transform:scale(1.04);
+}
+
+.poem{
+  min-height:190px;
+  display:grid;
+  align-content:center;
+  gap:8px;
+  text-align:center;
+}
+
+.poem span{
+  opacity:0;
+  transform:translateY(12px);
+  transition:.8s ease;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.1rem,3vw,1.5rem);
+}
+
+.poem.reveal span{
+  opacity:1;
+  transform:none;
+}
+
+.poem.reveal span:nth-child(1){transition-delay:0s}
+.poem.reveal span:nth-child(2){transition-delay:.65s}
+.poem.reveal span:nth-child(3){transition-delay:1.3s}
+.poem.reveal span:nth-child(4){transition-delay:1.95s}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
+  gap:16px;
+  margin-top:30px;
+}
+
+.card{
+  padding:24px;
+  border:1px solid rgba(245,241,255,.12);
+  background:rgba(255,255,255,.045);
+  border-radius:20px;
+  box-shadow:0 15px 50px rgba(0,0,0,.18);
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(185,167,239,.4);
+}
+
+.card p{
+  font-size:1.05rem;
+}
+
+.reveal-note{
+  display:block;
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:.45s ease;
+  margin-top:0;
+  color:#d7cdef;
+}
+
+.reveal-item.opened .reveal-note{
+  max-height:150px;
+  opacity:1;
+  margin-top:12px;
+}
+
+.final-note{
+  margin-top:40px;
+  text-align:center;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.3rem;
+}
+
+/* =========================================================
+   MADAM LORE
+   ========================================================= */
+
+.story{
+  background:
+    radial-gradient(circle at 50% 50%,rgba(111,90,168,.1),transparent 45%);
+}
+
+.timeline{
+  border-left:1px solid rgba(185,167,239,.4);
+  margin:35px 0;
+  padding-left:25px;
+}
+
+.chapter{
+  margin-bottom:38px;
+  position:relative;
+}
+
+.chapter:before{
+  content:"";
+  position:absolute;
+  left:-31px;
+  top:8px;
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  background:var(--lav);
+  box-shadow:0 0 15px var(--lav);
+}
+
+.chapter-box{
+  padding:24px;
+  border:1px solid rgba(245,241,255,.1);
+  background:rgba(255,255,255,.035);
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.chapter-box h3{
+  color:#f5f1ff;
+}
+
+.chapter-box p{
+  color:#d7d2e7;
+}
+
+.lore-progress{
+  width:100%;
+  height:7px;
+  background:rgba(255,255,255,.1);
+  border-radius:10px;
+  overflow:hidden;
+  margin:15px 0;
+}
+
+.lore-progress i{
+  display:block;
+  width:99.3%;
+  height:100%;
+  background:var(--lav);
+  border-radius:10px;
+}
+
+/* =========================================================
+   ENVELOPES
+   ========================================================= */
+
+.envelopes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
+  gap:16px;
+  margin-top:30px;
+}
+
+.envelope{
+  height:180px;
+  perspective:900px;
+  cursor:pointer;
+}
+
+.env-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  transition:.7s ease;
+  transform-style:preserve-3d;
+}
+
+.envelope.open .env-inner{
+  transform:rotateY(180deg);
+}
+
+.face{
+  position:absolute;
+  inset:0;
+  backface-visibility:hidden;
+  border:1px solid rgba(245,241,255,.12);
+  border-radius:20px;
+  background:rgba(255,255,255,.045);
+  padding:25px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+}
+
+.face.back{
+  transform:rotateY(180deg);
+  background:var(--cream);
+  color:#251b2a;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.15rem;
+  line-height:1.6;
+}
+
+.seal{
+  font-size:2rem;
+  color:var(--lav);
+  margin-bottom:10px;
+}
+
+/* =========================================================
+   MUSIC ROOM
+   ========================================================= */
+
+.music{
+  background:
+    radial-gradient(circle at 50% 35%,rgba(185,167,239,.08),transparent 40%);
+}
+
+.player{
+  margin-top:35px;
+}
+
+.record{
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  margin:0 auto 30px;
+  background:
+    repeating-radial-gradient(
+      circle,
+      #111 0 4px,
+      #171717 5px 7px
+    );
+  display:grid;
+  place-items:center;
+  box-shadow:0 15px 40px #0005;
+}
+
+.record:after{
+  content:"";
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:var(--lav);
+}
+
+.record.playing{
+  animation:spin 3s linear infinite;
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+.music-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
+  gap:16px;
+}
+
+.track{
+  padding:24px;
+  border:1px solid rgba(245,241,255,.12);
+  background:rgba(255,255,255,.045);
+  border-radius:20px;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+.track:hover,
+.track.playing{
+  border-color:var(--lav);
+  box-shadow:0 0 30px rgba(185,167,239,.15);
+}
+
+.track-label{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.track-label small{
+  color:var(--lav);
+}
+
+.track-label b{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.25rem;
+}
+
+.track em{
+  color:#aaa5c0;
+  font-size:.9rem;
+}
+
+.track-visualizer{
+  height:35px;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  margin:15px 0;
+}
+
+.track-visualizer span{
+  width:4px;
+  height:10px;
+  border-radius:4px;
+  background:var(--lav);
+}
+
+.track.playing .track-visualizer span{
+  animation:wave .55s ease-in-out infinite alternate;
+}
+
+.track.playing .track-visualizer span:nth-child(2){
+  animation-delay:.1s;
+}
+
+.track.playing .track-visualizer span:nth-child(3){
+  animation-delay:.2s;
+}
+
+.track.playing .track-visualizer span:nth-child(4){
+  animation-delay:.3s;
+}
+
+.track.playing .track-visualizer span:nth-child(5){
+  animation-delay:.4s;
+}
+
+@keyframes wave{
+  to{
+    height:32px;
+  }
+}
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.polaroids{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.polaroid{
+  background:var(--cream);
+  color:#302332;
+  padding:10px 10px 24px;
+  box-shadow:0 12px 35px #0005;
+  transform:rotate(var(--r));
+  transition:.3s ease;
+  position:relative;
+  cursor:pointer;
+}
+
+.polaroid:hover{
+  transform:rotate(0) translateY(-5px);
+  z-index:3;
+}
+
+.polaroid img{
+  display:block;
+  width:100%;
+  aspect-ratio:1;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.caption{
+  font-family:cursive;
+  padding:10px 3px 0;
+  font-size:.95rem;
+}
+
+.polaroid .reveal-note{
+  color:#302332;
+}
+
+/* =========================================================
+   LAST PAGE
+   ========================================================= */
+
+.footer-note{
+  margin-top:35px;
+  font-family:cursive;
+  font-size:1.7rem;
+  color:#c0b9d5;
+}
+
+.egg{
+  margin-top:45px;
+}
+
+.egg button{
+  border:1px solid rgba(185,167,239,.45);
+  background:transparent;
+  color:#f5f1ff;
+  border-radius:999px;
+  padding:14px 24px;
+  cursor:pointer;
+  min-height:48px;
+}
+
+#eggMessage{
+  min-height:65px;
+  margin-top:20px;
+  font-family:cursive;
+  font-size:1.25rem;
+  color:#d7cdef;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:520px){
+
+  .proposal-screen{
+    padding:25px 15px;
+  }
+
+  .confession{
+    padding:30px 18px;
+  }
+
+  .lily{
+    opacity:.3;
+    transform:scale(.7);
+  }
+
+  .l1{
+    left:-55px;
+  }
+
+  .l2{
+    right:-60px;
+  }
+
+  .j-section{
+    padding:75px 16px;
+  }
+
+  .cards,
+  .envelopes,
+  .music-grid{
+    grid-template-columns:1fr;
+  }
+
+  .polaroids{
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+
+  .face{
+    padding:18px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+    animation-duration:.001ms!important;
+    transition-duration:.001ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     PROPOSAL
+     ===================================================== -->
+
+<div id="proposal">
+
+  <div class="progress-dots" id="progressDots"></div>
+
+  <section class="proposal-screen active" data-step="0">
+
+    <div class="proposal-bg"></div>
+
+    <div class="lily l1"><i></i><b></b><em></em></div>
+    <div class="lily l2"><i></i><b></b><em></em></div>
+    <div class="lily l3"><i></i><b></b><em></em></div>
+    <div class="lily l4"><i></i><b></b><em></em></div>
+
+    <div id="petals"></div>
+
+    <div class="proposal-content">
+
+      <div class="eyebrow">
+        a tiny universe, handcrafted
+      </div>
+
+      <h1>
+        For my Moon
+      </h1>
+
+      <p>
+        For the girl who almost blocked me.👑😭<br>
+        <span class="serif">
+          ...and accidentally became one of my favourite people.
+        </span>
+      </p>
+
+      <button class="btn primary" onclick="proposalStep(1)">
+        Enter →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="1">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <div class="eyebrow">
+        something I should say properly
+      </div>
+
+      <p>
+        Daa, I'm just going to say this properly because I don't want to keep hiding what I feel behind jokes and reels 😭 I really, really love you.
+      </p>
+
+      <button class="btn primary" onclick="proposalStep(2)">
+        Keep reading →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="2">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <p>
+        The more I've gotten to know you, the more I've fallen for you, and it's honestly all the little things about you—the way you talk, the stupid things we laugh about, our calls, sharing songs, even the random nonsense you send me 😭❤️
+      </p>
+
+      <button class="btn primary" onclick="proposalStep(3)">
+        Keep reading →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="3">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <p>
+        I know you've told me how frustrating it is when you're simply kind to someone and they take that kindness as love, and I really don't want you to feel like I'm doing the same thing.
+      </p>
+
+      <button class="btn primary" onclick="proposalStep(4)">
+        Keep reading →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="4">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <p>
+        I didn't fall for you because you were nice to me or because you made me feel special one day. I fell for you because I got to know you, and somewhere along the way, you became someone I genuinely love and care about.
+      </p>
+
+      <button class="btn primary" onclick="proposalStep(5)">
+        Keep reading →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="5">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <p>
+        I know I've already told you how I feel, but I don't know if I ever made the actual question clear.
+      </p>
+
+      <p style="margin-top:35px">
+        So I'm asking you properly now...
+      </p>
+
+      <button class="btn primary" onclick="proposalStep(6)">
+        I'm listening →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="6">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <div class="ring-stage">
+
+        <div class="ring-box" id="ringBox">
+
+          <div class="ring-lid"></div>
+
+          <div class="ring"></div>
+
+        </div>
+
+      </div>
+
+      <h2>
+        Would you want to be my girlfriend? 🥹❤️
+      </h2>
+
+      <p>
+        I want your answer to be completely yours.
+      </p>
+
+      <button class="btn primary" onclick="yesAnswer()">
+        Yes ❤️
+      </button>
+
+      <button class="btn" onclick="timeAnswer()">
+        I need some time 🌷
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="7">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <h2>
+        Then I guess this is where our story begins. ❤️
+      </h2>
+
+      <p>
+        I love you, Lilly. 🌷
+      </p>
+
+      <p>
+        Thank you for choosing me.
+      </p>
+
+      <button class="btn primary" onclick="openJournal()">
+        Come inside →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="8">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <h2>
+        That's okay. ❤️
+      </h2>
+
+      <p>
+        You don't have to give me an answer before you're ready. I meant everything I said, but I want your answer to be yours—not something you give me because you feel like you have to.
+      </p>
+
+      <p>
+        Take your time, Lilly. Whatever you decide, I'll respect it. 🌷
+      </p>
+
+      <p>
+        I'm just glad I got to tell you how I feel.
+      </p>
+
+      <button class="btn" onclick="proposalStep(1)">
+        Read it again
+      </button>
+
+      <button class="btn" onclick="proposalStep(9)">
+        I'm done for now
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="proposal-screen" data-step="9">
+
+    <div class="proposal-bg"></div>
+
+    <div class="confession">
+
+      <div class="eyebrow">
+        for whenever you're ready
+      </div>
+
+      <h2>
+        Thank you for reading all the way through. 🌷
+      </h2>
+
+      <button class="btn primary" onclick="proposalStep(0)">
+        Start again
+      </button>
+
+    </div>
+
+  </section>
+
+</div>
+
+
+<!-- =====================================================
+     MADAM / GIFT WEBSITE
+     ===================================================== -->
+
+<div id="journal">
+
+  <div class="journal-bg"></div>
+
+  <main class="journal-main">
+
+
+    <!-- OPENING -->
+
+    <section class="j-section">
+
+      <div class="j-wrap" style="text-align:center">
+
+        <div class="eyebrow">
+          a tiny universe, handcrafted
+        </div>
+
+        <h1>
+          For my Moon
+        </h1>
+
+        <p>
+          For the girl who almost blocked me.👑😭<br>
+          <span class="serif">
+            ...and accidentally became one of my favourite people.
+          </span>
+        </p>
+
+        <button
+          class="btn primary"
+          onclick="document.getElementById('giftMoon').scrollIntoView({behavior:'smooth'})"
+        >
+          Enter →
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- MOON -->
+
+    <section class="j-section" id="giftMoon">
+
+      <div class="j-wrap" style="text-align:center">
+
+        <div class="eyebrow">
+          chapter one
+        </div>
+
+        <h2>
+          The Moon
+        </h2>
+
+        <p class="lead">
+          Some things are easier to understand when you stop trying to name them.
+        </p>
+
+        <div
+          id="giftMoonButton"
+          class="interactive-moon"
+          aria-label="Click the moon to reveal a poem"
+        ></div>
+
+        <div class="poem" id="giftPoem">
+
+          <span>
+            I once tried to describe the moon.
+          </span>
+
+          <span>
+            Then I met you
+          </span>
+
+          <span>
+            and realised I had been looking
+          </span>
+
+          <span>
+            in the wrong direction.
+          </span>
+
+        </div>
+
+        <p
+          class="hand"
+          style="font-size:1.5rem;color:#9994b4"
+        >
+          tap the moon
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- THINGS I HOPE YOU NEVER LOSE -->
+
+    <section class="j-section">
+
+      <div class="j-wrap">
+
+        <div class="eyebrow">
+          a small request
+        </div>
+
+        <h2>
+          Things I Hope<br>
+          You Never Lose
+        </h2>
+
+        <p class="lead">
+          Growing up is not supposed to mean sanding every strange, wonderful edge off yourself.
+        </p>
+
+        <div class="cards">
+
+          <div class="card reveal-item">
+
+            <p>
+              Your goofy eyes👀(my lord damnn💖)
+            </p>
+
+            <span class="reveal-note">
+              exactly the kind of magic i never want to lose ✨
+            </span>
+
+          </div>
+
+
+          <div class="card reveal-item">
+
+            <p>
+              Your ridiculous little laughs😄💖
+            </p>
+
+            <span class="reveal-note">
+              the sound of joy should stay forever 💞
+            </span>
+
+          </div>
+
+
+          <div class="card reveal-item">
+
+            <p>
+              The childish side of you👶(my favorite❤️)
+            </p>
+
+            <span class="reveal-note">
+              that innocence is part of your charm, not a flaw 🌙
+            </span>
+
+          </div>
+
+
+          <div class="card reveal-item">
+
+            <p>
+              The way you get excited over tiny things🥳💗
+            </p>
+
+            <span class="reveal-note">
+              tiny joys are often the sweetest kind 🌼
+            </span>
+
+          </div>
+
+
+          <div class="card reveal-item">
+
+            <p>
+              The person you are when nobody is watching👑
+            </p>
+
+            <span class="reveal-note">
+              that version of you is beautiful and real 🌟
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="final-note">
+          Growing up doesn't mean you have to leave these things behind.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MADAM LORE -->
+
+    <section class="j-section story">
+
+      <div class="j-wrap">
+
+        <div class="eyebrow">
+          classified records
+        </div>
+
+        <h2>
+          Madam Lore™👑
+        </h2>
+
+        <p class="lead">
+          A completely objective historical archive. Absolutely no exaggeration whatsoever
+        </p>
+
+        <div class="timeline">
+
+
+          <article class="chapter">
+
+            <div class="chapter-box reveal-item">
+
+              <h3>
+                CHAPTER 01 — THE TEXT THAT CHANGED EVERYTHING
+              </h3>
+
+              <p>
+                13TH MAY 2026
+              </p>
+
+              <p>
+                "Sooo you're a author ???"
+              </p>
+
+              <p>
+                Creepy but cute
+              </p>
+
+              <p>
+                <b>
+                  Small text, such beauty entered my life
+                </b>
+              </p>
+
+              <span class="reveal-note">
+                still one of the best little beginnings 💌
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="chapter">
+
+            <div class="chapter-box reveal-item">
+
+              <h3>
+                CHAPTER 02 — GUDDU MORNING
+              </h3>
+
+              <p
+                class="hand"
+                style="font-size:2.3rem"
+              >
+                Guddu morninggg 🌞
+              </p>
+
+              <span class="reveal-note">
+                morning chaos, but somehow very cute 🫶
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="chapter">
+
+            <div class="chapter-box reveal-item">
+
+              <h3>
+                CHAPTER 03 — MEH MEH
+              </h3>
+
+              <p>
+                28th MAY 2026
+              </p>
+
+              <p>
+                “Haleeemuuu🐐”
+              </p>
+
+              <p>
+                HOWW CANN A PERSOONN BE SOO CUTEE!!😭💗
+              </p>
+
+              <span class="reveal-note">
+                the kind of nonsense that made the whole day better 😭💖
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="chapter">
+
+            <div class="chapter-box reveal-item">
+
+              <h3>
+                CHAPTER 04 — THE 150 BLOCKED PEOPLE
+              </h3>
+
+              <p>
+                You were <b>THIS</b> close.
+              </p>
+
+              <div class="lore-progress">
+                <i></i>
+              </div>
+
+              <p
+                class="hand"
+                style="font-size:1.6rem"
+              >
+                My survival probability: 99.3%
+              </p>
+
+              <span class="reveal-note">
+                lucky me, the universe kept the right one 💫
+              </span>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ENVELOPES -->
+
+    <section class="j-section">
+
+      <div class="j-wrap">
+
+        <div class="eyebrow">
+          unsent drafts
+        </div>
+
+        <h2>
+          Things I Never Said
+        </h2>
+
+        <p class="lead">
+          No grand speech. No hidden expectation. Just a few truths folded into envelopes.
+        </p>
+
+        <div class="envelopes">
+
+
+          <div class="envelope">
+
+            <div class="env-inner">
+
+              <div class="face front">
+
+                <div>
+
+                  <div class="seal">
+                    ✦
+                  </div>
+
+                  Envelope 01<br>
+
+                  <small>
+                    tap to open
+                  </small>
+
+                </div>
+
+              </div>
+
+              <div class="face back">
+
+                I like how you can be incredibly mature and incredibly goofy five minutes later.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="envelope">
+
+            <div class="env-inner">
+
+              <div class="face front">
+
+                <div>
+
+                  <div class="seal">
+                    ☾
+                  </div>
+
+                  Envelope 02<br>
+
+                  <small>
+                    tap to open
+                  </small>
+
+                </div>
+
+              </div>
+
+              <div class="face back">
+
+                Your smile is unfair.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="envelope">
+
+            <div class="env-inner">
+
+              <div class="face front">
+
+                <div>
+
+                  <div class="seal">
+                    ✿
+                  </div>
+
+                  Envelope 03<br>
+
+                  <small>
+                    tap to open
+                  </small>
+
+                </div>
+
+              </div>
+
+              <div class="face back">
+
+                You don't have to become less childish to become more grown up.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="envelope">
+
+            <div class="env-inner">
+
+              <div class="face front">
+
+                <div>
+
+                  <div class="seal">
+                    ♡
+                  </div>
+
+                  Envelope 04<br>
+
+                  <small>
+                    tap to open
+                  </small>
+
+                </div>
+
+              </div>
+
+              <div class="face back">
+
+                Thank you for existing.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="envelope locked">
+
+            <div class="env-inner">
+
+              <div class="face front">
+
+                <div>
+
+                  <div class="seal">
+                    🔒
+                  </div>
+
+                  <b>
+                    Open only when you want to.
+                  </b>
+
+                  <br>
+
+                  <small>
+                    there is no right answer
+                  </small>
+
+                </div>
+
+              </div>
+
+              <div class="face back">
+
+                Whatever you feel about me, I hope you always feel free to tell me.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MUSIC -->
+
+    <section class="j-section music">
+
+      <div class="j-wrap">
+
+        <div class="eyebrow">
+          side b
+        </div>
+
+        <h2>
+          Music Room
+        </h2>
+
+        <p class="lead">
+          A little record shop for moods that don't fit neatly into words. No autoplay. Just press play when you want to.
+        </p>
+
+        <p
+          class="hand"
+          style="font-size:1.5rem;color:#aaa5c0;margin-bottom:18px"
+        >
+          increase the volume ✨
+        </p>
+
+        <div class="player">
+
+          <div class="record" id="giftRecord"></div>
+
+          <div class="music-grid">
+
+
+            <div
+              class="track"
+              data-track="moonlight"
+            >
+
+              <div class="track-head">
+
+                <div class="track-label">
+
+                  <small>01</small>
+
+                  <b>
+                    Moonlight
+                  </b>
+
+                </div>
+
+              </div>
+
+              <div class="track-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <em>
+                for your soft moments
+              </em>
+
+            </div>
+
+
+            <div
+              class="track"
+              data-track="goofy"
+            >
+
+              <div class="track-head">
+
+                <div class="track-label">
+
+                  <small>02</small>
+
+                  <b>
+                    Goofy Madam
+                  </b>
+
+                </div>
+
+              </div>
+
+              <div class="track-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <em>
+                the loud little laugh track
+              </em>
+
+            </div>
+
+
+            <div
+              class="track"
+              data-track="heartattack"
+            >
+
+              <div class="track-head">
+
+                <div class="track-label">
+
+                  <small>03</small>
+
+                  <b>
+                    Heart Attack
+                  </b>
+
+                </div>
+
+              </div>
+
+              <div class="track-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <em>
+                the one that keeps me smiling
+              </em>
+
+            </div>
+
+
+            <div
+              class="track"
+              data-track="neet"
+            >
+
+              <div class="track-head">
+
+                <div class="track-label">
+
+                  <small>04</small>
+
+                  <b>
+                    Just You
+                  </b>
+
+                </div>
+
+              </div>
+
+              <div class="track-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <em>
+                soft and sweet, like you
+              </em>
+
+            </div>
+
+
+            <div
+              class="track"
+              data-track="twam"
+            >
+
+              <div class="track-head">
+
+                <div class="track-label">
+
+                  <small>05</small>
+
+                  <b>
+                    2 AM Thoughts
+                  </b>
+
+                </div>
+
+              </div>
+
+              <div class="track-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <em>
+                the one that says too much
+              </em>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <section class="j-section gallery">
+
+      <div class="j-wrap">
+
+        <div class="eyebrow">
+          little evidence
+        </div>
+
+        <h2>
+          A Gallery of<br>
+          Little Things
+        </h2>
+
+        <p class="lead">
+          Not portraits. Just the tiny pieces of the world that somehow acquire a person's name.
+        </p>
+
+        <div class="polaroids">
+
+
+          <div
+            class="polaroid reveal-item"
+            style="--r:-2deg"
+          >
+
+            <img
+              loading="lazy"
+              src="1.jpg"
+              alt="You with that perfect smile"
+            >
+
+            <div class="caption">
+              That hat, that smile.
+            </div>
+
+            <span class="reveal-note">
+              the kind of moment i never want to forget 🎩
+            </span>
+
+          </div>
+
+
+          <div
+            class="polaroid reveal-item"
+            style="--r:2deg"
+          >
+
+            <img
+              loading="lazy"
+              src="2.jpg"
+              alt="Your playful side"
+            >
+
+            <div class="caption">
+              You being you.
+            </div>
+
+            <span class="reveal-note">
+              effortlessly bright, genuinely joyful 🎀
+            </span>
+
+          </div>
+
+
+          <div
+            class="polaroid reveal-item"
+            style="--r:-1deg"
+          >
+
+            <img
+              loading="lazy"
+              src="3.jpg"
+              alt="Your thoughtful moments"
+            >
+
+            <div class="caption">
+              The quiet beauties.
+            </div>
+
+            <span class="reveal-note">
+              when you're lost in thought, you're still breathtaking 🌸
+            </span>
+
+          </div>
+
+
+          <div
+            class="polaroid reveal-item"
+            style="--r:3deg"
+          >
+
+            <img
+              loading="lazy"
+              src="4.jpg"
+              alt="Your silly moments"
+            >
+
+            <div class="caption">
+              Unfiltered chaos.
+            </div>
+
+            <span class="reveal-note">
+              the goofy smiles that make me smile too 💕
+            </span>
+
+          </div>
+
+
+          <div
+            class="polaroid reveal-item"
+            style="--r:-3deg"
+          >
+
+            <img
+              loading="lazy"
+              src="5.jpg"
+              alt="Your creative hands"
+            >
+
+            <div class="caption">
+              You create magic.
+            </div>
+
+            <span class="reveal-note">
+              your hands know how to make things beautiful 🎨
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LAST PAGE -->
+
+    <section class="j-section">
+
+      <div class="j-wrap" style="text-align:center">
+
+        <div class="eyebrow">
+          the last page
+        </div>
+
+        <h2>
+          Whatever happens next,<br>
+          I'm glad our paths crossed.
+        </h2>
+
+        <div
+          class="hand"
+          style="font-size:2rem;color:#c0b9d5"
+        >
+          — Fazil
+        </div>
+
+        <div class="footer-note">
+          Keep being you.
+        </div>
+
+        <div class="egg">
+
+          <button id="eggBtn">
+            Do not press.
+          </button>
+
+          <div id="eggMessage"></div>
+
+        </div>
+
+        <button
+          class="btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        >
+          home
+        </button>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script>
+
+/* =========================================================
+   PROPOSAL NAVIGATION
+   ========================================================= */
+
+const proposalScreens =
+  [...document.querySelectorAll(".proposal-screen")];
+
+let proposalCurrent = 0;
+
+const progressDots =
+  document.getElementById("progressDots");
+
+for(let i=0;i<7;i++){
+
+  const dot=document.createElement("span");
+
+  dot.className="progress-dot";
+
+  progressDots.appendChild(dot);
+
+}
+
+function updateProgress(){
+
+  document
+    .querySelectorAll(".progress-dot")
+    .forEach((dot,index)=>{
+
+      dot.classList.toggle(
+        "active",
+        index===Math.min(proposalCurrent,6)
+      );
+
+    });
+
+}
+
+function proposalStep(step){
+
+  proposalCurrent=step;
+
+  proposalScreens.forEach(screen=>{
+
+    screen.classList.toggle(
+      "active",
+      Number(screen.dataset.step)===step
+    );
+
+  });
+
+  progressDots.style.display =
+    step===9 ? "none" : "flex";
+
+  updateProgress();
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+  if(step===6){
+
+    setTimeout(()=>{
+
+      document
+        .getElementById("ringBox")
+        .classList.add("open");
+
+    },350);
+
+  }
+
+}
+
+
+/* =========================================================
+   YES
+   ========================================================= */
+
+function yesAnswer(){
+
+  const box=document.getElementById("ringBox");
+
+  box.classList.add("open","yes");
+
+  createConfetti();
+
+  setTimeout(()=>{
+
+    proposalStep(7);
+
+  },1800);
+
+}
+
+
+/* =========================================================
+   NEED SOME TIME
+   ========================================================= */
+
+function timeAnswer(){
+
+  proposalStep(8);
+
+}
+
+
+/* =========================================================
+   CONFETTI
+   ========================================================= */
+
+function createConfetti(){
+
+  const colors=[
+    "#f5dce6",
+    "#f7f1e9",
+    "#d987a7",
+    "#e9c878",
+    "#b9a7ef",
+    "#fff"
+  ];
+
+  for(let i=0;i<75;i++){
+
+    const piece=document.createElement("span");
+
+    piece.className="confetti";
+
+    piece.style.left =
+      Math.random()*100+"vw";
+
+    piece.style.setProperty(
+      "--x",
+      (Math.random()*35-17)+"vw"
+    );
+
+    piece.style.background =
+      colors[
+        Math.floor(Math.random()*colors.length)
+      ];
+
+    piece.style.animationDelay =
+      Math.random()*.7+"s";
+
+    piece.style.transform =
+      "rotate("+Math.random()*360+"deg)";
+
+    document.body.appendChild(piece);
+
+    setTimeout(()=>{
+      piece.remove();
+    },3500);
+
+  }
+
+}
+
+
+/* =========================================================
+   PETALS
+   ========================================================= */
+
+const petalContainer =
+  document.getElementById("petals");
+
+for(let i=0;i<28;i++){
+
+  const petal=document.createElement("span");
+
+  petal.className="petal";
+
+  petal.style.left =
+    Math.random()*100+"vw";
+
+  petal.style.animationDuration =
+    8+Math.random()*12+"s";
+
+  petal.style.animationDelay =
+    -Math.random()*15+"s";
+
+  petalContainer.appendChild(petal);
+
+}
+
+
+/* =========================================================
+   OPEN GIFT WORLD
+   ========================================================= */
+
+function openJournal(){
+
+  document
+    .getElementById("proposal")
+    .style.display="none";
+
+  document
+    .getElementById("journal")
+    .classList.add("active");
+
+  window.scrollTo({
+    top:0,
+    behavior:"instant"
+  });
+
+}
+
+
+/* =========================================================
+   MOON POEM
+   ========================================================= */
+
+const giftMoonButton =
+  document.getElementById("giftMoonButton");
+
+const giftPoem =
+  document.getElementById("giftPoem");
+
+giftMoonButton.addEventListener("click",()=>{
+
+  giftPoem.classList.add("reveal");
+
+});
+
+
+/* =========================================================
+   REVEAL CARDS
+   ========================================================= */
+
+document
+  .querySelectorAll("#journal .reveal-item")
+  .forEach(item=>{
+
+    item.addEventListener("click",()=>{
+
+      const wasOpen =
+        item.classList.contains("opened");
+
+      document
+        .querySelectorAll("#journal .reveal-item")
+        .forEach(other=>{
+          other.classList.remove("opened");
+        });
+
+      if(!wasOpen){
+
+        item.classList.add("opened");
+
+      }
+
+    });
+
+  });
+
+
+/* =========================================================
+   ENVELOPES
+   ========================================================= */
+
+document
+  .querySelectorAll(".envelope")
+  .forEach(envelope=>{
+
+    envelope.addEventListener("click",()=>{
+
+      envelope.classList.toggle("open");
+
+    });
+
+  });
+
+
+/* =========================================================
+   MUSIC
+   ========================================================= */
+
+const trackPaths={
+
+  moonlight:"moonlight.mp3",
+
+  goofy:"goofymadam.mp3",
+
+  heartattack:"heartattack.mp3",
+
+  neet:"just madam.mp3",
+
+  twam:"2am.mp3"
+
+};
+
+let currentAudio=null;
+
+let currentTrack=null;
+
+const giftRecord =
+  document.getElementById("giftRecord");
+
+
+function stopMusic(){
+
+  if(currentAudio){
+
+    currentAudio.pause();
+
+    currentAudio.currentTime=0;
+
+  }
+
+  if(currentTrack){
+
+    currentTrack.classList.remove("playing");
+
+  }
+
+  giftRecord.classList.remove("playing");
+
+  currentAudio=null;
+
+  currentTrack=null;
+
+}
+
+
+document
+  .querySelectorAll(".track")
+  .forEach(track=>{
+
+    track.addEventListener("click",()=>{
+
+      if(
+        currentTrack===track &&
+        currentAudio &&
+        !currentAudio.paused
+      ){
+
+        stopMusic();
+
+        return;
+
+      }
+
+      stopMusic();
+
+      const path =
+        trackPaths[track.dataset.track];
+
+      if(!path)return;
+
+      const audio =
+        new Audio(path);
+
+      audio.volume=.7;
+
+      currentAudio=audio;
+
+      currentTrack=track;
+
+      track.classList.add("playing");
+
+      giftRecord.classList.add("playing");
+
+      audio.play().catch(()=>{
+
+        /*
+          Browser may block local audio until
+          the user interacts. This is expected.
+        */
+
+      });
+
+      audio.onended=()=>{
+
+        stopMusic();
+
+      };
+
+    });
+
+  });
+
+
+/* =========================================================
+   MADAM BUTTON
+   ========================================================= */
+
+const eggBtn =
+  document.getElementById("eggBtn");
+
+const eggMessage =
+  document.getElementById("eggMessage");
+
+const eggLines=[
+
+  "I knew you would.",
+
+  "Still curious?",
+
+  "You’re impossible.",
+
+  "Okay fine. You’re cute.",
+
+  "I love you. And whether you know what to do with those words yet or not, thats okay. Theyre yours to keep, with no pressure attached.",
+
+  "NOW GO STUDY 😭📚"
+
+];
+
+let eggIndex=0;
+
+eggBtn.addEventListener("click",()=>{
+
+  eggMessage.textContent =
+    eggLines[
+      eggIndex % eggLines.length
+    ];
+
+  eggIndex++;
+
+});
+
+
+/* =========================================================
+   INITIALIZE
+   ========================================================= */
+
+updateProgress();
+
 </script>
+
 </body>
 </html>
