@@ -484,6 +484,42 @@ p{
   position:relative;
 }
 
+.j-section::after{
+  content:"scroll down";
+  position:absolute;
+  left:50%;
+  bottom:22px;
+  transform:translateX(-50%);
+  color:rgba(255,255,255,.28);
+  font-size:.68rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  pointer-events:none;
+}
+
+.j-section#giftMoon{
+  padding-top:72px;
+  padding-bottom:72px;
+}
+
+.j-section#giftMoon::after{
+  display:none;
+}
+
+.moon-scroll-cue{
+  display:inline-block;
+  margin-left:12px;
+  color:rgba(255,255,255,.28);
+  font-size:.68rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  vertical-align:middle;
+}
+
+.j-section.last-page::after{
+  display:none;
+}
+
 .j-section .j-wrap{
   width:min(950px,100%);
   margin:auto;
@@ -682,6 +718,10 @@ p{
 
 .envelope.open .env-inner{
   transform:rotateY(180deg);
+}
+
+.envelope.open{
+  min-height:220px;
 }
 
 .face{
@@ -1348,6 +1388,9 @@ p{
           style="font-size:1.5rem;color:#9994b4"
         >
           tap the moon
+          <span class="moon-scroll-cue">
+            scroll down
+          </span>
         </p>
 
       </div>
@@ -1357,7 +1400,7 @@ p{
 
     <!-- THINGS I HOPE YOU NEVER LOSE -->
 
-    <section class="j-section">
+    <section class="j-section last-page">
 
       <div class="j-wrap">
 
@@ -1781,8 +1824,6 @@ p{
               </div>
 
             </div>
-
-          </div>
 
           </div>
 
